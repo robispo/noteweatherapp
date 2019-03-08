@@ -49,6 +49,7 @@ nav > ul > li > a {
 
 .portrait {
   width: 250px;
+  border-radius: 40%;
 }
 
 input {
