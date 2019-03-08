@@ -1,5 +1,5 @@
 const getForecast = (address, callback) => {
-  let url = `http://localhost:3000/weather?address=${encodeURI(address)}`;
+  let url = `/weather?address=${encodeURI(address)}`;
 
   fetch(url)
     .then(r =>
