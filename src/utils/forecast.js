@@ -5,7 +5,7 @@ const forecast = (latitude, longitude, callback) => {
     latitude
   )},${encodeURI(
     longitude
-  )}?units=si&lang=es&exclude=minutely,hourly,alerts,flags`;
+  )}?units=si&lang=en&exclude=minutely,hourly,alerts,flags`;
   const options = {
     url,
     json: true
@@ -24,7 +24,7 @@ const forecast = (latitude, longitude, callback) => {
 
     callback(
       undefined,
-      `${r.body.daily.data[0].summary}\nIt is currently ${
+      `${r.body.daily.data[0].summary} It is currently ${
         data.temperature
       } degrees out. There is a ${data.precipProbability}% chance of rain.`
     );
