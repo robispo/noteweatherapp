@@ -12,6 +12,7 @@ const getForecast = (address, callback) => {
 };
 const weatherForm = document.getElementById('mainform');
 const addressInp = document.getElementById('inpaddress');
+
 const message1 = document.getElementById('message1');
 const message2 = document.getElementById('message2');
 
